@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manage your expenses!</title>
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.purple-cyan.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.2/vue.min.js"></script>
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.23.0/ramda.min.js"></script> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout__container" id="app">
+    <div class="row">
+      <div class="mdl-layout-spacer"></div>
+        <div class="column">
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="expense">
+              <label class="mdl-textfield__label" for="expense">Text...</label>
+            </div>
+          </form>
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="number" id="cost">
+              <label class="mdl-textfield__label" for="cost">Cost</label>
+            </div>
+          </form>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" @click="addExpense()">Submit</button>
+        </div>
+      <div class="mdl-layout-spacer"></div>
+    </div>
+  </div>
+</body>
+</html>

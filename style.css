@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form {
+  margin: 20px;
+}
